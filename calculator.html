@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeBoost</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo-green.png"/>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header1">
+        <nav>
+            <a href="index.html"><img src="images/logo-white-text.png" style="width: 175px"></a> 
+            <div class="nav-links">
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="calculator.html">Calculator</a></li>
+                     <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>   
+    </section>
+     
+    <div class="container">
+        <section>
+            <div class="wrapper">
+                <label for="age" class="lbl">
+                    My Age
+                </label>
+                <div class="input-box">
+                    <input type="number" value="20" id="age" class="val">
+                </div>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">Average Canadian Life Expectancy</span>
+                <span class="val">
+                    83 years
+                </span>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">LifeBoost</span>
+                <span id="boost-amount" class="val">
+                    0
+                </span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="lbl">Your Life Expectancy</span>
+                <span id="total-amount" class="val">
+                    83
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper">
+                <label for="veget" class="lbl">
+                    Days vegetarian per week 
+                </label>
+                <span id="days-veget" class="val">
+                    3
+                </span>
+            </div>
+            <input type="range" min="0" max="7" id="veget" value="3">
+
+            <div class="wrapper">
+                <label for="vegan" class="lbl">
+                    Days vegan per week
+                </label>
+                <span id="days-vegan" class="val">
+                    3
+                </span>
+            </div>
+            <input type="range" min="0" max="7" id="vegan" value="3">
+
+            <div class="wrapper">
+                <label for="farm" class="lbl">
+                    Days eating farm-to-table foods
+                </label>
+                <span id="days-farm" class="val">
+                    3
+                </span>
+            </div>
+            <input type="range" min="0" max="7" id="farm" value="3">
+        
+            <div class="wrapper">
+                <label for="active" class="lbl">
+                    Days commuting by bicycle or walking 
+                </label>
+                <span id="days-active" class="val">
+                    3
+                </span>
+            </div>
+            <input type="range" min="0" max="7" id="active" value="3">
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
