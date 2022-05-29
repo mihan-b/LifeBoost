@@ -32,7 +32,7 @@ function calculateLife(){
     document.getElementById("days-veget").textContent = `${daysVeget}`;
     document.getElementById("days-vegan").textContent = `${daysVegan}`;
     document.getElementById("days-active").textContent = `${daysActive}`;
-    document.getElementById("days-farm").textContent = `${daysActive}`;
+    document.getElementById("days-farm").textContent = `${daysFarm}`;
 
  
 }
